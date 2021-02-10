@@ -1,6 +1,0 @@
-textin = str(input("Please enter a string: "))
-strcntin = len(textin)
-textout = textin.strip().lower()
-strcntout = len(textout)
-print("The normalised string is:  {}".format(textout))
-print ("We reduced the length of the string from {} to {} characters".format(strcntin, strcntout))

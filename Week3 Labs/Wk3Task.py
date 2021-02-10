@@ -1,5 +1,7 @@
-strin = "This is a test"
+strin = input("Enter a text string: ")
 
-test = strin[5:-1]
+strlen = len(strin)
 
-print(test)
+strout = strin[strlen::-2]
+
+print("Input Text :\t{}\nOutput Text:\t{}".format(strin, strout))
