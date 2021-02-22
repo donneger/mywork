@@ -1,0 +1,1 @@
+Coding proactice and exercises from week 3. 

@@ -1,19 +1,7 @@
 # Program to store students name and courses.
 # Author: Gerry Donnelly. 
 
-college = {
-    "Name": "Mary", "Modules" : [
-        {"Module Name" : "Programming",
-        "Grade" : 45
-        }, 
+college = {"Module Name" : "Programming", "Grade" : 45}
 
-        {"Module Name" : "History",
-        "Grade" : 99
-        }
-    ]
-    
-}
-
-print (college["Name"])
-for modules in college["Modules"]:
+for modules in college:
     print (modules["Module Name"], "\t", modules["Grade"])

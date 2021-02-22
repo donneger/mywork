@@ -1,4 +1,4 @@
-#Coding practice for week 3 - playing around with variables.
+#Program Coding practice for week 3 - playing around with variables.
 
 age = 3
 print(type(age))

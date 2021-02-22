@@ -1,9 +1,11 @@
+# Program to generate and print out random fruits from a list. 
+# Author: Gerry Donnelly
+
+
 import random as rd
 
-fruits = ("apple", "pear", "plum", "orange", "bananna", "grape", "lemon", "lime")
+fruits = ("apple", "pear", "plum", "orange", "bananna", "grape", "lemon", "lime") # List of fruits. 
 
-index = rd.randint(0,len(fruits)-1)
+randfruits = fruits[rd.randint(0,len(fruits)-1)] # Generate a random index for the list and assign to the variable.
 
-fruits = fruits[index]
-
-print ("A random fruit:{}".format(fruits))
+print ("A random fruit:{}".format(randfruits))
