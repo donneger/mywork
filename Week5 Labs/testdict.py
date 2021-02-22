@@ -1,3 +1,6 @@
+# Program testing out nested dictionary. 
+# Author: Gerry Donnelly. 
+
 people = {1: {'Name': 'John', 'Age': '27', 'Sex': 'Male'},
           2: {'Name': 'Marie', 'Age': '22', 'Sex': 'Female'}}
 
