@@ -1,4 +1,4 @@
-# More If statement Coding
+# More If statement Coding, program calculate the the grade level based on the grade mark input. 
 # Author: Gerry Donnelly
 
 grade = int(input("Please enter the grade:"))

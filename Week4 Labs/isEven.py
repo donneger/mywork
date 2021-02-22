@@ -1,4 +1,4 @@
-# Coding practice for If Statements
+# Coding practice for If Statements, program to check if a number input is odd or even. 
 # Author: Gerry Donnelly
 
 number = int(input("Please enter a number:"))

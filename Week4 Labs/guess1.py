@@ -1,8 +1,8 @@
-# Coding For and While Loops
+# Coding For and While Loops, program to check if a number input (guess) matches the hidden number. 
 # Author Gerry Donnelly
 
 
-number = 5
+number = 5 # this is the number to be guessed. 
 guess = 0
 
 while guess != number:
