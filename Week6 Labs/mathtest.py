@@ -1,10 +1,7 @@
+D = {'Mary': {'Courses': {'History' : 20, "Maths" : 70, "French" : 68}}}
 
 
-x = 6.56
-y = .456
-z = 5
-
-t = x-y
-if x - y > z:
-    print (t)
-print (-t)
+for student, courses in D.items():
+   print("Name:", student)
+   for course, grade in courses.items():
+        print("\t", course, grade, "\n")

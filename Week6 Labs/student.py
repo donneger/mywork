@@ -2,54 +2,43 @@
 # Author: Gerry Donnelly
 
 
-print ("What would you like to do? \n\t (a) Add a New Student \n\t (v) View Students \n\t (q) Quit")
-x =  input("Type one letter from menu above:")
-
-while x not in ("a", "v", "q"):
-        print ("Please try again, input not valid, please input a, v or q")
-        x =  input("Type one letter from menu above:")
-
-if (x) == "a":
-         print ("Add a new student")
-elif (x) == "v":
-         print ("View Student")
-elif (x) == "q":
-         print ("quit")        
 
 
+def menustart ():
+        print ("What would you like to do? \n\t (A)dd a New Student \n\t (V)iew Students \n\t (Q)uit")
+        selection =  input("Type one letter from menu above:")
+        while selection not in ("a", "v", "q"):
+                print ("Please try again, input not valid, please input a, v or q")
+                selection =  input("Type one letter from menu above:")
+        return (selection)
 
+def addstudentnm(students):
+        newstudents = {}
+        newstudents["Name"] = input("Enter Student Name:")
+        newstudents["Courses"] = courses()
+        students.append(newstudents)
+        return students
 
+def courses():
+        newmod=[]
+        modnm = str(input("\tEnter Course:")).strip()
+        while modnm != "":
+                newmods = {}
+                newmods["Course"] = modnm
+                newmods["Grade"] = input("\tEnter Grade:")  
+                newmod.append(newmods)
+                modnm = str(input("\tEnter Course:")).strip()
+        return newmod
 
+Students = []
+selection = menustart()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-""" student = {
-"name":"Mary",
-"modules": [
-{
-"courseName":"Programming",
-"grade": 45
-},
-{
-"courseName":"History",
-"grade":99
-}
-]
-}
-print ("Student: {}".format(student["name"]))
-for module in student["modules"]:
-    print("\t {} \t: {}".format(module["courseName"], module["grade"])) """
+while selection != "q":
+        if (selection) == "a":  
+                print (Students)
+                addstudentnm(Students)
+        elif (selection) == "v":
+                print ("View Student")
+        elif (selection) == "q":
+                print ("quit")        
+        selection = menustart()

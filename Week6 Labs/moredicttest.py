@@ -1,12 +1,21 @@
-D = {'Mary': {'Course': 'History', 'Grade': 20},
-     'John': {"Course": 'Geography', "Grade": 40},
-     'Tom': {"Course": 'Maths', "Grade": 60}}
+D1 = []
+D2 = {}
+name = "test"
 
-D['Gerry'] = {"Course": 'French', "Grade": 80}
-D['Fiona'] = {"Course": 'German', "Grade": 100}
-
-
-for student, courses in D.items():
-   print("Name:", student)
-   for course in courses:
-        print("\t", course, courses[course])
+while name != "":
+    name = input("Enter Student Name:")
+    if name == "":
+        break
+    D1.append(name)
+    course = 0
+    grade = 0
+    while course != "":
+        course = str(input("\tEnter Course:"))
+        if course == "":
+            break
+        grade = input("\tEnter Grade:")  
+        D2 = {course:grade}
+        D1.append(D2)
+        
+        
+print(D1)
