@@ -1,4 +1,7 @@
 import os
+import math
+
+
 
 filename = "gerry.txt"
 
